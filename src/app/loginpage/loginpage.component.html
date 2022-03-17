@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row jumbotron">
+    <div class="booking-image col-md-8 col-lg-4 col-sm-12">
+        <img class="dhlimg"  src="../../assets/dvf.jpg" alt="Booking Image">
+    </div>
+    <div class="booking-image col-md-4 col-lg-4 col-sm-12">
+        <img class="dhlimg"  src="../../assets/kvf.jpg" alt="Booking Image">
+    </div>
+    <div class="col-md-4 col-lg-4 col-sm-12">
+    <form [formGroup]="loginForm">
+      <div class="form-group">
+        <label class="label">Username</label>
+        <input type="text" class="form-control" formControlName="userName">
+      </div>
+      <div *ngIf="loginForm.get('userName').invalid && loginForm.get('userName').touched" class="text-danger">
+        Please Enter valid username
+
+      </div>
+      <div class="form-group">
+        <label class="label">Password</label>
+        <input type="password" class="form-control" formControlName="password">
+      </div>
+      <div>
+      <button type="submit" (click)="this.login()" [disabled]="disableButton()"><p class="button-text">Login</p></button>
+    </div>
+    <div>
+    <button type="submit" (click)="this.changePassword()" class="button-sm">Forgot Password</button>
+  </div>
+    </form>
+  </div>
+</div>
+<div class="kk">dmmeisck</div>
+  </div>

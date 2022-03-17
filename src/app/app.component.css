@@ -1,0 +1,23 @@
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.jumbotron{
+    background-color: rgb(75, 94, 204);
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    text-align: left;
+    font-weight: bolder;
+
+}
+img{
+    border-radius: 10px;
+}
+label { color: rgb(8, 7, 6); 
+    font-weight: bold; 
+    display: block; 
+ } 
